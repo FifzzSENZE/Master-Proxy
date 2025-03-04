@@ -25,5 +25,4 @@ jobs:
           git config --global user.email 'rbellaputri12@gmail.com'
           git add proxies
           git commit -m "🚀Update Proxy Files on `date +'%Y-%m-%d %H:%M:%S'`"
-          git remote add origin https://github.com/FifzzSENZE/Master-Proxy.git
-          git push --set-upstream Proxy-lists master --force
+          git push --set-upstream Master-Proxy master --force
