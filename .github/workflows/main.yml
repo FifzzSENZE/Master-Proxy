@@ -27,3 +27,5 @@ jobs:
           git commit -m "🚀Update Proxy Files on `date +'%Y-%m-%d %H:%M:%S'`"
           git remote add Master-Proxy https://github.com/FifzzSENZE/Master-Proxy.git
           git push --set-upstream Master-Proxy master --force
+        env: 
+          GITHUB_TOKEN: ${{ secret.MY_PAT }}
