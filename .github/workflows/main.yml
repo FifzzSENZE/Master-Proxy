@@ -28,4 +28,4 @@ jobs:
           git remote add Master-Proxy https://github.com/FifzzSENZE/Master-Proxy.git
           git push --set-upstream Master-Proxy master --force
         env: 
-          GITHUB_TOKEN: ${{ secret.MY_PAT }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
