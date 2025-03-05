@@ -206,20 +206,3 @@ def process_proxies():
     duplicate_and_sort_proxies('proxies/all_no_ports.txt')
 
 process_proxies()
-
-def update_github(proxies):
-    with open('proxies/all.txt', 'proxies/all_no_ports.txt', 'proxies/http.txt', 'proxies/https.txt', 'proxies/socks4.txt', 'proxies/socks5.txt') as f:
-        json.dump(proxies, f)
-    
-    os.system('git add proxies/all.txt')
-    os.system('git add proxies/all_no_ports.txt')
-    os.system('git add proxies/http.txt')
-    os.system('git add proxies/https.txt')
-    os.system('git add proxies/socks4.txt')
-    os.system('git add proxies/socks5.txt')
-    os.system('git commit -m "Update proxies"')
-    os.system('git push origin master')
-
-if __name__ == "__mastin__":
-    proxies = scrape_proxies()
-    update_github(proxies)
