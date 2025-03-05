@@ -18,6 +18,8 @@ jobs:
           pip install -r requirements.txt # install the required packages
           pip install --user git-filter-repo
       - name: Run script and update files
+        env:
+          TOKEN: ${{ secrets.MY_PAT }}
         run: |
           # git filter-repo --path sites.json --path main.py --path README.md --path requirements.txt --path LICENSE --path .github/ --force
           python main.py # run your script that collects proxies
