@@ -40,6 +40,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          repository: FifzzSENZE/ProxyList
           github_token: ${{ secrets.MY_PAT }}
           branch: master 
