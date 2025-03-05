@@ -33,7 +33,7 @@ jobs:
 
       - name: Commit files
         run: |
-          git add -A
+          git add proxies/
           git commit -m "Update Proxies (`date '+%F %H:%M %Z'`)" -a
           git branch -u origin/master
           
